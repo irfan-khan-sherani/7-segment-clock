@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#clock {
+    display: flex;
+    font-size: 10rem; /* Increased the font size */
+}
+
+.digit, .colon {
+    width: 80px; /* Increased the width */
+    text-align: center;
+    margin: 0 10px; /* Added margin for spacing */
+}
+
+.digit {
+    position: relative;
+    height: 140px; /* Increased height for better visibility */
+}
+
+.segment {
+    position: absolute;
+    background-color: #222;
+}
+
+.segment.on {
+    background-color: red;
+}
+
+.segment.a { top: 0; left: 20px; width: 40px; height: 10px; }
+.segment.b { top: 0; right: 0; width: 10px; height: 55px; }
+.segment.c { bottom: 0; right: 0; width: 10px; height: 55px; }
+.segment.d { bottom: 0; left: 20px; width: 40px; height: 10px; }
+.segment.e { bottom: 0; left: 0; width: 10px; height: 55px; }
+.segment.f { top: 0; left: 0; width: 10px; height: 55px; }
+.segment.g { top: 50%; left: 20px; width: 40px; height: 10px; transform: translateY(-50%); }
